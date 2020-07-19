@@ -1,4 +1,4 @@
-# DJ01/frame-dependency-api project
+# frame-dependency-api project
 This is the parent project of the application test project. It contains all the methods and functionality of the follwoing: -
 1) mysql-jdbc connections (insert/update/delete/retireve)
 2) rest-api (setupurl/setParam/setHeaders/HitRequest/verifyReponseCode/verifyResponse).
