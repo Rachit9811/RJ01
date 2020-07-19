@@ -1,0 +1,3 @@
+com\geminisols\frame_dependency_api\JdbcConnectionTest.class
+com\geminisols\frame_dependency_api\ReporterClassTest.class
+com\geminisols\frame_dependency_api\RestAPIClientTest.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.geminisols.frame_dependency_api.JdbcConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 182.133 s - in com.geminisols.frame_dependency_api.JdbcConnectionTest

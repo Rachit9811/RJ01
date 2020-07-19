@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-19T01:01:11 IST" name="Suite" finished-at="2020-07-19T01:01:25 IST" duration-ms="13942">
+    <groups>
+    </groups>
+    <test started-at="2020-07-19T01:01:11 IST" name="Test" finished-at="2020-07-19T01:01:25 IST" duration-ms="13942">
+      <class name="com.geminisols.countries_test_automation.TC03">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.geminisols.countries_test_automation.TC03@c000d10]" started-at="2020-07-19T01:01:25 IST" name="beforeTest" finished-at="2020-07-19T01:01:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="validateAllMissingCountryInDB(org.testng.ITestContext)[pri:0, instance:com.geminisols.countries_test_automation.TC03@c000d10]" started-at="2020-07-19T01:01:25 IST" name="validateAllMissingCountryInDB" finished-at="2020-07-19T01:01:25 IST" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@76998952]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllMissingCountryInDB -->
+      </class> <!-- com.geminisols.countries_test_automation.TC03 -->
+      <class name="com.geminisols.countries_test_automation.TC02">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:com.geminisols.countries_test_automation.TC02@461d0238]" started-at="2020-07-19T01:01:11 IST" name="createReport" finished-at="2020-07-19T01:01:11 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReport -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.geminisols.countries_test_automation.TC02@461d0238]" started-at="2020-07-19T01:01:11 IST" name="beforeTest" finished-at="2020-07-19T01:01:11 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="validateAllMissingCountryInDB(org.testng.ITestContext)[pri:0, instance:com.geminisols.countries_test_automation.TC02@461d0238]" started-at="2020-07-19T01:01:11 IST" name="validateAllMissingCountryInDB" finished-at="2020-07-19T01:01:25 IST" duration-ms="13811" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@76998952]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertFalse(Assert.java:65)
+at org.testng.Assert.assertFalse(Assert.java:75)
+at com.geminisols.countries_test_automation.TestBase.addVaidationStep(TestBase.java:77)
+at com.geminisols.countries_test_automation.TC02.validateAllMissingCountryInDB(TC02.java:100)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.geminisols.countries_test_automation.Launcher.main(Launcher.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllMissingCountryInDB -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.geminisols.countries_test_automation.TC02@461d0238]" started-at="2020-07-19T01:01:25 IST" name="afterTest" finished-at="2020-07-19T01:01:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.geminisols.countries_test_automation.TC02@461d0238]" started-at="2020-07-19T01:01:25 IST" name="afterSuite" finished-at="2020-07-19T01:01:25 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.geminisols.countries_test_automation.TC02 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

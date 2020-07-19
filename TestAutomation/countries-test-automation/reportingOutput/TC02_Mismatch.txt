@@ -1,0 +1,20 @@
+Country Name: Afghanistan
+Data: Capital
+API Value: Kabul
+DB Value: Punjab
+
+Country Name: Angola
+Data: Currency
+API Value: AOA
+DB Value: XCD
+
+Country Name: Albania
+Data: Capital
+API Value: Tirana
+DB Value: Haryana
+
+Country Name: United Arab Emirates
+Data: Currency
+API Value: AED
+DB Value: INR
+
