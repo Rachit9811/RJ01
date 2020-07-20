@@ -8,12 +8,12 @@ This is the child project of the frame-dependency-api project.
 It contains all the test scripts TC01, TC02 and TC03 using the parent main classes. 
 1) TC01 test script output<br>
 <div align="Left">
-    <img src="./reportingOutput/TC01.JPG" width="600px"</img> 
+    <img src="./reportingOutput/TC01.JPG" width="500px"</img> 
 </div>
 <br>
 2) TC01 test script output<br>
 <div align="Left">
-    <img src="./reportingOutput/TC02.JPG" width="600px"</img> 
+    <img src="./reportingOutput/TC02.JPG" width="500px"</img> 
 </div>
 <div align="Right">
     <img src="./reportingOutput/TC02_Mismatch.JPG" width="200px"</img> 
