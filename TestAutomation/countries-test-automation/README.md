@@ -15,7 +15,7 @@ It contains all the test scripts TC01, TC02 and TC03 using the parent main class
 <div align="Left">
     <img src="./reportingOutput/TC02.JPG" width="500px"</img> 
 </div>
-<div align="Right">
+<div align="Left">
     <img src="./reportingOutput/TC02_Mismatch.JPG" width="200px"</img> 
 </div>
 <br>
