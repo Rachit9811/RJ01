@@ -22,7 +22,7 @@ public class TC02 extends TestBase {
 	}
 
 	@Test
-	public void validateAllMissingCountryInDB(ITestContext testContext) {
+	public void verfyAllCountiresWithDifferentCapitalAndCureency(ITestContext testContext) {
 		boolean blnStepFlag = false;
 
 		// Step 1
@@ -57,7 +57,9 @@ public class TC02 extends TestBase {
 			} else {
 				logger.info("File already exists.");
 			}
+			blnStepFlag = true;
 		} catch (Exception e) {
+			blnStepFlag = false;
 			e.printStackTrace();
 		}
 		addVaidationStep(blnStepFlag, "Create a file for reporting difference 'TC02_Mismatch.txt'", "File created",
@@ -101,7 +103,7 @@ public class TC02 extends TestBase {
 				"Verify all the countries with different Capital/Currency data in between DB & API",
 				"There are no country with different Capital/Currency data in between DB & API",
 				count1 + " countries data are mismatching in Capital & " + count2
-						+ " countries data are mismatching in Currency. Check the result in TC02_Mismatch.txt");
+						+ " countries data are mismatching in Currency. Check the result in <b>TC02_Mismatch.txt<\b>");
 		if (!blnStepFlag)
 			return;
 	}

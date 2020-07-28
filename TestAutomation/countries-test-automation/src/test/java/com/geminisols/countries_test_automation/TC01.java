@@ -29,7 +29,6 @@ public class TC01 extends TestBase {
 		addVaidationStep(blnStepFlag, "Verify API Executed:<br>https://restcountries.eu/rest/v2/all", "API executed",
 				"API not executed");
 		if (!blnStepFlag) {
-
 			return;
 		}
 

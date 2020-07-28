@@ -10,14 +10,14 @@ public class TC03 extends TestBase {
 	@BeforeMethod
 	public void beforeTest() {
 		reporter.testCaseName = "TC03";
-		reporter.testDescription = "To verify all the countries with different Capital/Currency data in between DB & API";
+		reporter.testDescription = "To verify the country with maximum border is same in both DB & API";
 		reporter.authors = "Rachit";
 		reporter.category = "Functional";
 		reporter.startTestCase();
 	}
 
 	@Test
-	public void validateAllMissingCountryInDB(ITestContext testContext) {
+	public void verifyCountryWithMaximumBorder(ITestContext testContext) {
 		boolean blnStepFlag = false;
 
 		// Step 1
