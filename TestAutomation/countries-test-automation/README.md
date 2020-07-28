@@ -1,30 +1,49 @@
-# DJ01/frame-dependency-api project
-This is the parent project of the application test project. It contains all the methods and functionality of the follwoing: -
-1) mysql-jdbc connections (insert/update/delete/retireve)
-2) rest-api (setupurl/setParam/setHeaders/HitRequest/verifyReponseCode/verifyResponse).
-3) ExtentReport methods (startReport/startTest/reportStep/endTest/endReport)
+# countries-test-automation project
+This is the child project of the frame-dependency-api project. 
 <br><br>
 **Run Command**: -
->mvn clean install
+>mvn generate-resources test
 <br><br>
 
-This project is used mainly for 2 purposes: -
-1) The 3 main classes (JdbcConnection/RestAPIClient/ReporterClass) are used for the re-usable methods in any application test project with the help of following dependency: -<br>
-
-```
-<dependency>
-  <groupId>com.geminisols</groupId>
-  <artifactId>frame-dependency-api</artifactId>
-  <version>1-SNAPSHOT</version>
-</dependency>
-  ```
-2) The 3 test classes is used to test all the methods defined in the 3 main classes and the data is given for the testing in such a way as it is setting-up the MySql Db tables i.e countries and borders, as it is mentioned in the requirement.
-<br>**Note**: - Here, all Delete(set table to empty in beginning), Insert (Insert all rows in both the table), Update(Updaing few records) are made through JDBC connection as per the requirement document.
-
+It contains all the test scripts TC01, TC02 and TC03 using the parent main classes. 
+1) TC01 test script output<br>
 <div align="Left">
-    <img src="./reportingOutput/1st.JPG" width="800px"</img> 
+    <img src="./reportingOutput/TC01.JPG" width="500px"</img> 
 </div>
 <br>
+2) TC01 test script output<br>
 <div align="Left">
-    <img src="./reportingOutput/2nd.JPG" width="400px"</img> 
+    <img src="./reportingOutput/TC02.JPG" width="500px"</img> 
 </div>
+<div align="Left">
+    <img src="./reportingOutput/TC02_Mismatch.JPG" width="200px"</img> 
+</div>
+<br>
+3) TC01 test script output<br>
+<div align="Left">
+    <img src="./reportingOutput/TC03.JPG" width="600px"</img> 
+</div>
+
+<br><br>Other than these, it also comprises the 2 main classes: -<br> 
+1) **Launcher java** 
+<br>a) It intilizes the config.properties file, which is working like TestSuite file. 
+<br>b) Here is also a code to generate run time testng.xml which contains only those classes which are available in config file. **generate-resources** is the maven goal to generate testng.xml.
+<br>c) And finally we are running that testng file.**test** is the maven goal to run testng.xml.
+<br><br>
+2) **TestBase.java**
+<br>a) It is a place to initialize all the main classes object of the parent object and finally used a parent class for all the Test Script classes.
+<br>b) Constructor is used to hit the https://restcountries.eu/rest/v2/all API and run some queries to get the values in api & db variables.
+<br>c) @BeforeSuite and @AfterSuite testng annotation are also give here.
+<br><br>
+
+**Report output of the following 3 test cases as per the configuration, shown below**: -<br>
+<div align="Left">
+    <img src="./reportingOutput/All3.JPG" width="300px"</img> 
+</div>
+<div align="Center">
+    <img src="./reportingOutput/1&3.JPG" width="300px"</img> 
+</div>
+<div align="Right">
+    <img src="./reportingOutput/2&3.JPG" width="300px"</img> 
+</div>
+<br>
